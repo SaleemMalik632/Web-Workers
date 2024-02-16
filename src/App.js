@@ -16,6 +16,8 @@ const App = () => {
       sumWebWorker.terminate()
       randomArrayWorker.terminate()
     }
+    randomArrayWorker.terminate();
+    sumWebWorker.terminate();
   }, []);
   const generateRandomArray = (length) => {
     alert('generating ...')
